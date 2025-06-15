@@ -11,8 +11,7 @@ while (chute != numeroSecreto) {
 
     // Condicional
     if (chute == numeroSecreto) {
-    
-        alert(`Você acertou!! O número secreto é o ${numeroSecreto} e teve ${tentativas} tentativas.`);
+
         console.log(numeroSecreto);
     } else {
 
@@ -26,3 +25,6 @@ while (chute != numeroSecreto) {
         tentativas++
     }
 }
+
+let palavraTentativa = tentativas > 1 ? `tentativas` : `tentativa`;
+alert(`Você acertou!! O número secreto é o ${numeroSecreto} e teve ${tentativas} ${palavraTentativa}.`);
