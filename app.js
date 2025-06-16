@@ -1,6 +1,6 @@
 alert("Bem vindo ao jogo do número secreto");
 
-let numeroSecreto = 4;
+let numeroSecreto = parseInt(Math.random() * 10 + 1);
 let chute;
 let tentativas = 1;
 
@@ -11,8 +11,9 @@ while (chute != numeroSecreto) {
 
     // Condicional
     if (chute == numeroSecreto) {
-
+        
         console.log(numeroSecreto);
+
     } else {
 
         if (chute < numeroSecreto) {
