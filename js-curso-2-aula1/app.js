@@ -12,6 +12,8 @@ function exibirTextoNaTela(tag, texto) {
 function verificarChute() {
     let chute = document.querySelector('input').value;
     console.log("O botão foi clicado");
+
+
     console.log(chute == numeroSecreto);
 };
 
