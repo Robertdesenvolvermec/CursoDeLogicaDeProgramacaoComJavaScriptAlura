@@ -10,28 +10,23 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function verificarChute() {
-<<<<<<< HEAD
-    let chute = document.querySelector('input').value;
-    console.log("O botão foi clicado");
-
-
-    console.log(chute == numeroSecreto);
-};
-=======
   let chute = document.querySelector("input").value;
+  console.log("O botão foi clicado");
 
-  if (chute == numeroSecreto) {
-    exibirTextoNaTela("h1", "Parabéns!!");
-    exibirTextoNaTela("p", "Você acertou!!");
+  console.log(chute == numeroSecreto);
+}
+let chute = document.querySelector("input").value;
+
+if (chute == numeroSecreto) {
+  exibirTextoNaTela("h1", "Parabéns!!");
+  exibirTextoNaTela("p", "Você acertou!!");
+} else {
+  if (chute > numeroSecreto) {
+    exibirTextoNaTela("p", "Você errou, o número é menor.");
   } else {
-    if (chute > numeroSecreto) {
-      exibirTextoNaTela("p", "Você errou, o número é menor.");
-    } else {
-      exibirTextoNaTela("p", "Você errou, o número é maior.");
-    }
+    exibirTextoNaTela("p", "Você errou, o número é maior.");
   }
 }
->>>>>>> 3623788806e314367e2b67bf109b64a21cb6aa20
 
 function gerarNumeroAleatorio() {
   return parseInt(Math.random() * 10 + 1);
